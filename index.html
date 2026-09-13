@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="大学准教授のプロフィールサイト">
+    <title>准教授プロフィール | 研究者ページ</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2 data-i18n="nav.brand">Dr. [お名前]</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">プロフィール</a></li>
+                <li><a href="#research" class="nav-link" data-i18n="nav.research">研究内容</a></li>
+                <li><a href="#publications" class="nav-link" data-i18n="nav.publications">業績</a></li>
+                <li><a href="#teaching" class="nav-link" data-i18n="nav.teaching">教育</a></li>
+                <li><a href="#committee" class="nav-link" data-i18n="nav.committee">委員歴</a></li>
+                <li><a href="#media" class="nav-link" data-i18n="nav.media">取材</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">連絡先</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="ja">日本語</button>
+                <button class="lang-btn" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="ko">한국어</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="profile-placeholder">
+                        <img src="images/profile-lim.jpg" alt="Professor Yeongjoo LIM">
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 data-i18n="hero.title">准教授 [お名前]</h1>
+                    <p class="title" data-i18n="hero.field">[専門分野] | [所属大学名]</p>
+                    <p class="subtitle" data-i18n="hero.department">[学部・学科名]</p>
+                    <div class="social-links">
+                        <a href="mailto:lim40@fc.ritsumei.ac.jp" class="social-link" aria-label="Email" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/yeongjoo.lim" class="social-link" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://scholar.google.com/citations?user=2j-hq6EAAAAJ&hl=ja" class="social-link" aria-label="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://research-db.ritsumei.ac.jp/rithp/k03/resid/S001137" class="social-link" aria-label="Ritsumeikan Research" target="_blank"><i class="fas fa-university"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">プロフィール</h2>
+            <div class="content-card">
+                <h3 data-i18n="about.subtitle">略歴</h3>
+                <p data-i18n="about.description">
+                    [ここに簡単な自己紹介文を記載してください。研究への情熱や、これまでの経歴、現在の研究の方向性などを記載します。]
+                </p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year" data-i18n="timeline.year1">20XX年</div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="timeline.event1">[大学名] [学部] 卒業</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year" data-i18n="timeline.year2">20XX年</div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="timeline.event2">[大学名] 大学院 修士課程修了</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year" data-i18n="timeline.year3">20XX年</div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="timeline.event3">[大学名] 大学院 博士課程修了 博士（[専門]）</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year" data-i18n="timeline.year4">20XX年</div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="timeline.event4">[機関名] [ポジション]</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year" data-i18n="timeline.year5">20XX年〜現在</div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="timeline.event5">[現在の大学名] 准教授</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year" data-i18n="timeline.year6">20XX年〜現在</div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="timeline.event6">[現在の大学名] 准教授</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year" data-i18n="timeline.year7">20XX年〜現在</div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="timeline.event7">[現在の大学名] 教授</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year" data-i18n="timeline.year8">20XX年〜現在</div>
+                        <div class="timeline-content">
+                            <h4 data-i18n="timeline.event8">[大学名] 客員教授</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="research.title">研究内容</h2>
+            <div class="content-card">
+                <h3 data-i18n="research.subtitle">研究テーマ</h3>
+                <p data-i18n="research.description">[主要な研究テーマの概要を記載してください。]</p>
+                
+                <div class="research-areas">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4 data-i18n="research.area1">研究分野 1</h4>
+                        <p data-i18n="research.area1Desc">[研究分野の説明文]</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4 data-i18n="research.area2">研究分野 2</h4>
+                        <p data-i18n="research.area2Desc">[研究分野の説明文]</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h4 data-i18n="research.area3">研究分野 3</h4>
+                        <p data-i18n="research.area3Desc">[研究分野の説明文]</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4 data-i18n="research.area4">モバイルヘルスケアの社会実装</h4>
+                        <p data-i18n="research.area4Desc">モバイル技術を活用した医療・健康管理サービスの普及と社会実装に関する研究。</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4 data-i18n="research.area5">バイオ炭の社会実装</h4>
+                        <p data-i18n="research.area5Desc">バイオ炭を活用した環境保全型農業の推進と持続可能な社会の実現に関する研究。</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 3rem;" data-i18n="research.keywordsTitle">研究キーワード</h3>
+                <div class="keywords">
+                    <span class="keyword" data-i18n="research.keyword1">キーワード1</span>
+                    <span class="keyword" data-i18n="research.keyword2">キーワード2</span>
+                    <span class="keyword" data-i18n="research.keyword3">キーワード3</span>
+                    <span class="keyword" data-i18n="research.keyword4">キーワード4</span>
+                    <span class="keyword" data-i18n="research.keyword5">キーワード5</span>
+                    <span class="keyword" data-i18n="research.keyword6">モバイルヘルスケア</span>
+                    <span class="keyword" data-i18n="research.keyword7">バイオ炭</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="publications.title">主要業績</h2>
+            <div class="content-card">
+                <!-- External Links Section -->
+                <div class="publications-links">
+                    <a href="https://research-db.ritsumei.ac.jp/rithp/k05/resid/S001137/821" target="_blank" class="pub-link-button">
+                        <i class="fas fa-file-alt"></i>
+                        <span data-i18n="publications.allPapersLink">全論文リストを見る（立命館大学研究者DB）</span>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=2j-hq6EAAAAJ&hl=ja" target="_blank" class="pub-link-button">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span data-i18n="publications.scholarLink">Google Scholar プロフィール</span>
+                    </a>
+                </div>
+
+                <!-- Scopus Stats -->
+                <div class="scopus-stats">
+                    <h3 data-i18n="publications.scopusTitle">Scopus統計（2025年時点）</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">32</div>
+                            <div class="stat-label" data-i18n="publications.papers">論文</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">328</div>
+                            <div class="stat-label" data-i18n="publications.citations">引用</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">11</div>
+                            <div class="stat-label">h-index</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 data-i18n="publications.journalTitle">代表的な論文（抜粋）</h3>
+                <ul class="publication-list">
+                    <li>
+                        <strong>Lim, Y.</strong> (2025). 
+                        "Adoption of AI Services Based on the Technology Acceptance Model: A Meta-Research Approach". 
+                        <em>International Journal of Technology Diffusion</em>, Vol. 15, No. 1.
+                    </li>
+                    <li>
+                        <strong>Lim, Y.</strong> (2025). 
+                        "Determinants and implications of mobile health application acceptability in high-income countries: an assessment". 
+                        <em>Drug Discovery Today</em>, Vol. 30, No. 10.
+                    </li>
+                    <li>
+                        <strong>Lim, Y.</strong> (2025). 
+                        "Does the Intuition of Top Managers Influence Corporate Entrepreneurship?". 
+                        <em>Administrative Sciences</em>, Vol. 15, No. 8.
+                    </li>
+                    <li>
+                        <strong>Lim, Y.</strong> (2025). 
+                        "Entrepreneurial Intention Among Engineering Students: The Moderating Role of Entrepreneurship Education in Japan". 
+                        <em>Behavioral Sciences</em>, Vol. 15, No. 5, 663.
+                    </li>
+                </ul>
+
+                <h3 style="margin-top: 2rem;" data-i18n="publications.bookTitle">著書</h3>
+                <ul class="publication-list">
+                    <li>
+                        <strong>Lim, Y.</strong> (2022). 
+                        "<em>Digital Healthcare Development and mHealth in South Korea</em>". 
+                        Springer. DOI: 10.1007/978-981-19-4230-3_4
+                    </li>
+                </ul>
+                
+                <p style="margin-top: 2rem; color: #4a5568;">
+                    <strong>Scopus統計:</strong> 論文数 32件 | 引用数 328回 | h-index 11
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="teaching.title">教育活動</h2>
+            <div class="content-card">
+                <h3 data-i18n="teaching.coursesTitle">担当講義</h3>
+                <div class="course-grid">
+                    <div class="course-card">
+                        <h4><i class="fas fa-chalkboard-teacher"></i> <span data-i18n="courses.course1">[講義名]</span></h4>
+                        <p class="course-info" data-i18n="teaching.courseLevel">[学部/大学院] | [学期]</p>
+                        <p data-i18n="teaching.courseDesc">[講義の概要説明]</p>
+                    </div>
+                    <div class="course-card">
+                        <h4><i class="fas fa-chalkboard-teacher"></i> <span data-i18n="courses.course2">[講義名]</span></h4>
+                        <p class="course-info" data-i18n="teaching.courseLevel">[学部/大学院] | [学期]</p>
+                        <p data-i18n="teaching.courseDesc">[講義の概要説明]</p>
+                    </div>
+                    <div class="course-card">
+                        <h4><i class="fas fa-chalkboard-teacher"></i> <span data-i18n="courses.course3">[講義名]</span></h4>
+                        <p class="course-info" data-i18n="teaching.courseLevel">[学部/大学院] | [学期]</p>
+                        <p data-i18n="teaching.courseDesc">[講義の概要説明]</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 2rem;" data-i18n="teaching.labTitle">研究室について</h3>
+                <p data-i18n="teaching.labDesc">[研究室の雰囲気、指導方針、学生へのメッセージなどを記載してください。]</p>
+                
+                <h3 style="margin-top: 2rem;" data-i18n="teaching.certificationTitle">認定資格</h3>
+                <div class="certification-card">
+                    <div class="certification-icon">
+                        🧱
+                    </div>
+                    <div class="certification-content">
+                        <h4 data-i18n="teaching.legoTitle">LEGO® SERIOUS PLAY® メソッドと教材活用トレーニング修了認定ファシリテータ</h4>
+                        <p data-i18n="teaching.legoDesc">LEGO® SERIOUS PLAY®は、レゴブロックを使った革新的なファシリテーション手法です。組織開発、戦略立案、イノベーション創出のワークショップで活用しています。</p>
+                    </div>
+                </div>
+                
+                <div class="lab-info">
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <span data-i18n="teaching.recruiting">学生募集中（学部生・大学院生）</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span data-i18n="teaching.labVisit">研究室見学はお気軽にご連絡ください</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Committee/Board Section -->
+    <section id="committee" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="committee.title">委員歴・社会活動</h2>
+            <div class="content-card">
+                <h3 data-i18n="committee.currentTitle">現在</h3>
+                <ul class="committee-list">
+                    <li>
+                        <div class="committee-period" data-i18n="committee.current1Period">2025/12/20 - 現在</div>
+                        <div class="committee-content">
+                            <strong data-i18n="committee.current1Org">大阪府教育委員会・大阪府学校教育審議会</strong>
+                            <span data-i18n="committee.current1Role">専門委員</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="committee-period" data-i18n="committee.current2Period">2023/04 - 現在</div>
+                        <div class="committee-content">
+                            <strong data-i18n="committee.current2Org">日本経営システム学会　関西支部</strong>
+                            <span data-i18n="committee.current2Role">副支部長</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="committee-period" data-i18n="committee.current3Period">2022/07 - 現在</div>
+                        <div class="committee-content">
+                            <strong data-i18n="committee.current3Org">Journal of Digital Life</strong>
+                            <span data-i18n="committee.current3Role">Editorial Board Member</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="committee-period" data-i18n="committee.current4Period">2021/04 - 現在</div>
+                        <div class="committee-content">
+                            <strong data-i18n="committee.current4Org">一般社団法人日本私立大学連盟 学生委員会 学生生活実態調査分科会</strong>
+                            <span data-i18n="committee.current4Role">委員</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="committee-period" data-i18n="committee.current5Period">2021/04 - 現在</div>
+                        <div class="committee-content">
+                            <strong data-i18n="committee.current5Org">日本経営システム学会　学会誌「IJAMS」編集委員会</strong>
+                            <span data-i18n="committee.current5Role">編集委員</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 style="margin-top: 2rem;" data-i18n="committee.pastTitle">過去</h3>
+                <ul class="committee-list">
+                    <li>
+                        <div class="committee-period" data-i18n="committee.past1Period">2021/04 - 2025/03</div>
+                        <div class="committee-content">
+                            <strong data-i18n="committee.past1Org">立命館大学 学生部</strong>
+                            <span data-i18n="committee.past1Role">副部長（OIC担当）</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="committee-period" data-i18n="committee.past2Period">2019/06 - 2021/03</div>
+                        <div class="committee-content">
+                            <strong data-i18n="committee.past2Org">草津市販路開拓推進補助金</strong>
+                            <span data-i18n="committee.past2Role">審査委員</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media/Interview Section -->
+    <section id="media" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="media.title">取材・メディア掲載</h2>
+            <div class="content-card">
+                <p data-i18n="media.description">取材やメディア出演のご依頼を承っております。研究内容の紹介、専門分野に関するコメント、講演などお気軽にお問い合わせください。</p>
+                
+                <h3 style="margin-top: 2rem;" data-i18n="media.topicsTitle">対応可能なトピック</h3>
+                <div class="media-topics">
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h4 data-i18n="media.topic1Title">研究内容の解説</h4>
+                        <p data-i18n="media.topic1Desc">最新の研究成果や専門分野について、一般向けにわかりやすく解説いたします。</p>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4 data-i18n="media.topic2Title">専門家コメント</h4>
+                        <p data-i18n="media.topic2Desc">専門分野に関連するニュースや社会問題について、学術的見地からコメントを提供します。</p>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4 data-i18n="media.topic3Title">講演・セミナー</h4>
+                        <p data-i18n="media.topic3Desc">企業、学校、一般向けの講演やセミナーの講師としてお話しさせていただきます。</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 2rem;" data-i18n="media.pastTitle">過去の掲載実績</h3>
+                <ul class="media-list">
+                    <li>
+                        <div class="media-date" data-i18n="media.media1Date">2024年</div>
+                        <div class="media-content">
+                            <strong data-i18n="media.media1Name">HR Insight（韓国）</strong> - <span data-i18n="media.media1Title">人事・経営専門メディア掲載</span><br>
+                            <span class="media-desc" data-i18n="media.media1Desc">技術経営、アントレプレナーシップに関する専門家インタビュー（複数回掲載）</span><br>
+                            <a href="https://www.hrinsight.co.kr/view/view.asp?in_cate=114&gopage=1&bi_pidx=27603" target="_blank" class="media-link"><i class="fas fa-external-link-alt"></i> 記事を読む</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media-date" data-i18n="media.media2Date">2023年2月</div>
+                        <div class="media-content">
+                            <strong data-i18n="media.media2Name">shiRUto（立命館大学）</strong> - <span data-i18n="media.media2Title">大学に期待される社会への拡張。産学連携で起こす「小さな社会変革」とは</span><br>
+                            <span class="media-desc" data-i18n="media.media2Desc">産学連携による社会課題解決の取り組みについて</span><br>
+                            <a href="https://shiruto.jp/sp/4725/" target="_blank" class="media-link"><i class="fas fa-external-link-alt"></i> 記事を読む</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media-date" data-i18n="media.media3Date">2022年</div>
+                        <div class="media-content">
+                            <strong data-i18n="media.media3Name">EMOTIONAL LINK</strong> - <span data-i18n="media.media3Title">起業家が身につけておきたいアントレプレナーシップとは？</span><br>
+                            <span class="media-desc" data-i18n="media.media3Desc">アントレプレナーシップ教育と起業家精神について</span><br>
+                            <a href="https://emotional-link.co.jp/lim-prof/" target="_blank" class="media-link"><i class="fas fa-external-link-alt"></i> 記事を読む</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media-date" data-i18n="media.media4Date">2021年</div>
+                        <div class="media-content">
+                            <strong data-i18n="media.media4Name">ブルーバックスアウトリーチ（講談社）</strong> - <span data-i18n="media.media4Title">バイオ炭で「食べるだけでエコ」な環境保全型農業を全国に広めたい</span><br>
+                            <span class="media-desc" data-i18n="media.media4Desc">環境問題解決に向けた研究プロジェクトの紹介</span><br>
+                            <a href="https://outreach.bluebacks.jp/memberinfo/4366" target="_blank" class="media-link"><i class="fas fa-external-link-alt"></i> 記事を読む</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="media-date" data-i18n="media.media5Date">継続中</div>
+                        <div class="media-content">
+                            <strong data-i18n="media.media5Name">Klik and Pay</strong> - <span data-i18n="media.media5Title">ビジネス・起業関連インタビュー</span><br>
+                            <span class="media-desc" data-i18n="media.media5Desc">スタートアップ支援とビジネス開発に関する専門家として</span><br>
+                            <a href="https://klikandpay.co.jp/interview-lim/" target="_blank" class="media-link"><i class="fas fa-external-link-alt"></i> 記事を読む</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="media-contact">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <div>
+                        <h4 data-i18n="media.contactTitle">取材依頼について</h4>
+                        <p data-i18n="media.contactDesc">取材のご依頼は、下記の連絡先フォームまたはメールにてお願いいたします。内容を確認の上、ご返信させていただきます。</p>
+                        <a href="#contact" class="btn-media" data-i18n="media.contactButton">お問い合わせフォームへ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">連絡先</h2>
+            <div class="content-card">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3 data-i18n="contact.officeTitle">オフィス情報</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <strong data-i18n="contact.university">立命館大学</strong><br>
+                                <span data-i18n="contact.department">経営学部 経営学科</span><br>
+                                <span data-i18n="contact.building">大阪いばらきキャンパス（OIC）</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong data-i18n="contact.email">Email:</strong><br>
+                                <a href="mailto:lim40@fc.ritsumei.ac.jp" style="color: var(--secondary-color); text-decoration: none;">lim40@fc.ritsumei.ac.jp</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <strong data-i18n="contact.website">Website:</strong><br>
+                                <a href="https://research-db.ritsumei.ac.jp/rithp/k03/resid/S001137" target="_blank" style="color: var(--secondary-color); text-decoration: none;">立命館大学研究者データベース</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h3 data-i18n="contact.formTitle">お問い合わせ</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact.name">お名前 *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-i18n="contact.emailLabel">メールアドレス *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" data-i18n="contact.subject">件名 *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-i18n="contact.message">メッセージ *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary" data-i18n="contact.submit">送信</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2026 [お名前]. All rights reserved.</p>
+            <p><span data-i18n="footer.lastUpdated">最終更新日:</span> <span id="lastUpdated"></span></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
