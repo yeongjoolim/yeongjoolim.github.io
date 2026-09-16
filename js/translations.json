@@ -11,9 +11,9 @@
       "contact": "Contact"
     },
     "hero": {
-      "title": "Professor Yeongjoo LIM",
-      "field": "Technology Management, Entrepreneurship | Ritsumeikan University",
-      "department": "College of Business Administration, Department of Business Administration"
+    "title": "Prof. YeongJoo LIM, Ph.D.",
+      "field": "Technology Management & Entrepreneurship | Ritsumeikan University",
+      "department": "Professor, College of Business Administration / Visiting Professor, Yonsei University"
     },
     "about": {
       "title": "About",
@@ -174,7 +174,7 @@
       "emailError": "Please enter a valid email address."
     },
     "footer": {
-      "copyright": "© 2026 [Your Name]. All rights reserved.",
+     "copyright": "© 2026 YeongJoo LIM. All rights reserved."
       "lastUpdated": "Last updated:"
     },
     "timeline": {
@@ -203,7 +203,7 @@
   },
   "ja": {
     "nav": {
-      "brand": "林 永周 教授",
+      "brand": "林 永周 (YeongJoo LIM)"
       "about": "プロフィール",
       "research": "研究内容",
       "publications": "業績",
@@ -213,9 +213,9 @@
       "contact": "連絡先"
     },
     "hero": {
-      "title": "教授 林 永周",
-      "field": "技術経営、アントレプレナーシップ | 立命館大学",
-      "department": "経営学部 経営学科"
+     "title": "教授 林 永周 (YeongJoo LIM)",
+      "field": "技術経営 · アントレプレナーシップ | 立命館大学",
+      "department": "経営学部 教授 / 延世大学 客員教授"
     },
    "about": {
       "title": "プロフィール",
@@ -376,7 +376,7 @@
       "emailError": "有効なメールアドレスを入力してください。"
     },
     "footer": {
-      "copyright": "© 2026 [お名前]. All rights reserved.",
+      "copyright": "© 2026 林 永周 (YeongJoo LIM). All rights reserved."
       "lastUpdated": "最終更新日:"
     },
     "timeline": {
@@ -405,7 +405,7 @@
   },
   "ko": {
     "nav": {
-      "brand": "임영주 교수",
+     "brand": "임영주 교수 (YeongJoo LIM)"
       "about": "프로필",
       "research": "연구",
       "publications": "업적",
@@ -415,9 +415,9 @@
       "contact": "연락처"
     },
     "hero": {
-      "title": "교수 임영주",
-      "field": "기술경영, 기업가정신 | 리츠메이칸대학교",
-      "department": "경영학부 경영학과"
+     "title": "임영주 교수 (YeongJoo LIM, Ph.D.)",
+      "field": "기술경영(MOT) · 기업가정신 교육 | 리츠메이칸대학교",
+      "department": "경영학부 교수 / 연세대학교 객원교수"
     },
    "about": {
       "title": "프로필",
@@ -578,7 +578,7 @@
       "emailError": "유효한 이메일 주소를 입력해주세요."
     },
     "footer": {
-      "copyright": "© 2026 [성함]. All rights reserved.",
+      "copyright": "© 2026 임영주 (YeongJoo LIM). All rights reserved."
       "lastUpdated": "최종 업데이트:"
     },
     "timeline": {
