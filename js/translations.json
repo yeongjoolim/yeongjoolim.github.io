@@ -18,10 +18,34 @@
     "about": {
       "title": "About",
       "subtitle": "Biography",
-      "description": "Professor specializing in Technology Management and Entrepreneurship. My research focuses on innovation strategy, startup ecosystems, and entrepreneurial processes in organizations.",
-      "timeline": {
-        "title": "Academic & Professional History"
-      }
+      "description": "Professor specializing in Technology Management and Entrepreneurship. My research focuses on innovation strategy, startup ecosystems, digital healthcare, and entrepreneurial processes in organizations.",
+      "educationTitle": "Education",
+      "experienceTitle": "Professional Experience"
+    },
+    "education": {
+      "year1": "Mar. 2015",
+      "event1": "Ph.D. in Technology Management, Graduate School of Technology Management, Ritsumeikan University",
+      "year2": "Mar. 2009",
+      "event2": "Master of Technology Management, Graduate School of Technology Management, Ritsumeikan University",
+      "year3": "Mar. 2007",
+      "event3": "B.B.A., College of Asia Pacific Management, Ritsumeikan Asia Pacific University (APU)"
+    },
+    "experience": {
+      "year1": "Apr. 2026 - Present",
+      "event1": "Professor, College of Business Administration, Ritsumeikan University",
+      "year2": "Apr. 2026 - Present",
+      "event2": "Visiting Professor, Biotechnology Management, Yonsei University Mirae Campus",
+      "year3": "Apr. 2021 - Present",
+      "event3": "Associate Dean of Student Affairs, Ritsumeikan University",
+      "year4": "Apr. 2021 - Mar. 2026",
+      "event4": "Associate Professor, College of Business Administration, Ritsumeikan University",
+      "year5": "Apr. 2017 - Mar. 2021",
+      "event5": "Assistant Professor / Lecturer, College of Business Administration, Ritsumeikan University",
+      "year6": "Apr. 2016 - Mar. 2019",
+      "event6": "Lecturer (Part-time), The Kyoto College of Graduate Studies for Informatics (KCGI)",
+      "year7": "Apr. 2015 - Mar. 2017",
+      "event7": "Lecturer (Part-time), Graduate School of Technology Management, Ritsumeikan University"
+    }
     },
     "research": {
       "title": "Research",
@@ -193,13 +217,37 @@
       "field": "技術経営、アントレプレナーシップ | 立命館大学",
       "department": "経営学部 経営学科"
     },
-    "about": {
+   "about": {
       "title": "プロフィール",
       "subtitle": "略歴",
-      "description": "技術経営とアントレプレナーシップを専門とする教授です。イノベーション戦略、スタートアップエコシステム、組織における起業プロセスに関する研究を行っています。",
-      "timeline": {
-        "title": "学歴・職歴"
-      }
+      "description": "技術経営（MOT）およびアントレプレナーシップ（起業家教育・スタートアップエコシステム）を専門とする研究者です。イノベーション創出、デジタルヘルスケア、社会実装に向けた組織・制度の研究と教育実践に取り組んでいます。",
+      "educationTitle": "学歴",
+      "experienceTitle": "職歴・主な経歴"
+    },
+    "education": {
+      "year1": "2015年3月",
+      "event1": "立命館大学大学院 テクノロジー・マネジメント研究科 博士課程修了 博士（技術経営）",
+      "year2": "2009年3月",
+      "event2": "立命館大学大学院 テクノロジー・マネジメント研究科 修士課程修了 修士（技術経営）",
+      "year3": "2007年3月",
+      "event3": "立命館アジア太平洋大学（APU） アジア太平洋マネジメント学部 卒業"
+    },
+    "experience": {
+      "year1": "2026年4月〜現在",
+      "event1": "立命館大学 経営学部 教授",
+      "year2": "2026年4月〜現在",
+      "event2": "延世大学（Yonsei University） 未来キャンパス バイオ技術経営 客員教授",
+      "year3": "2021年4月〜現在",
+      "event3": "立命館大学 学生部長補佐",
+      "year4": "2021年4月〜2026年3月",
+      "event4": "立命館大学 経営学部 准教授",
+      "year5": "2017年4月〜2021年3月",
+      "event5": "立命館大学 経営学部 助教 / 講師",
+      "year6": "2016年4月〜2019年3月",
+      "event6": "京都情報大学院大学（KCGI） 非常勤講師",
+      "year7": "2015年4月〜2017年3月",
+      "event7": "立命館大学大学院 テクノロジー・マネジメント研究科 非常勤講師"
+    }
     },
     "research": {
       "title": "研究内容",
@@ -371,13 +419,37 @@
       "field": "기술경영, 기업가정신 | 리츠메이칸대학교",
       "department": "경영학부 경영학과"
     },
-    "about": {
+   "about": {
       "title": "프로필",
       "subtitle": "약력",
-      "description": "기술경영과 기업가정신을 전공하는 교수입니다. 혁신 전략, 스타트업 생태계, 조직내 창업 프로세스에 관한 연구를 수행하고 있습니다.",
-      "timeline": {
-        "title": "학력 및 경력"
-      }
+      "description": "기술경영(MOT) 및 기업가정신(창업 교육·스타트업 생태계)을 전문으로 하는 연구자입니다. 혁신 창출, 디지털 헬스케어 및 사회 구현을 위한 조직과 제도의 연구와 실천에 매진하고 있습니다.",
+      "educationTitle": "학력",
+      "experienceTitle": "주요 경력"
+    },
+    "education": {
+      "year1": "2015년 3월",
+      "event1": "리츠메이칸대학교 대학원 기술경영연구과 박사과정 수료 (기술경영학 박사, Ph.D.)",
+      "year2": "2009년 3월",
+      "event2": "리츠메이칸대학교 대학원 기술경영연구과 석사과정 수료 (기술경영학 석사)",
+      "year3": "2007년 3월",
+      "event3": "리츠메이칸 아시아태평양대학교(APU) 아시아태평양매니지먼트학부 졸업 (경영학사)"
+    },
+    "experience": {
+      "year1": "2026년 4월 ~ 현재",
+      "event1": "리츠메이칸대학교 경영학부 교수 (Professor)",
+      "year2": "2026년 4월 ~ 현재",
+      "event2": "연세대학교 미래캠퍼스 바이오기술경영 객원교수 (Visiting Professor)",
+      "year3": "2021년 4월 ~ 현재",
+      "event3": "리츠메이칸대학교 학생처 부처장 (Associate Dean)",
+      "year4": "2021년 4월 ~ 2026년 3월",
+      "event4": "리츠메이칸대학교 경영학부 부교수 (Associate Professor)",
+      "year5": "2017년 4월 ~ 2021년 3월",
+      "event5": "리츠메이칸대학교 경영학부 조교 / 강사 (Lecturer)",
+      "year6": "2016년 4월 ~ 2019년 3월",
+      "event6": "교토정보대학원대학(KCGI) 비상근강사",
+      "year7": "2015년 4월 ~ 2017년 3월",
+      "event7": "리츠메이칸대학교 대학원 기술경영연구과 비상근강사"
+    }
     },
     "research": {
       "title": "연구 내용",
