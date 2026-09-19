@@ -1,565 +1,964 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="立命館大学 経営学部 林永周（YeongJoo LIM）教授の研究者プロフィールサイトです。技術経営、アントレプレナーシップ教育、スタートアップエコシステムを専門としています。">
-<title>林 永周 (YeongJoo LIM) | 立命館大学 教授</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林 永周 (YeongJoo LIM) | 立命館大学 教授 | 임영주</title>
+  <meta name="description" content="立命館大学 経営学部 林永周（YeongJoo LIM）教授の研究者ウェブサイト。技術経営（MOT）、アントレプレナーシップ教育、スタートアップエコシステム、デジタルヘルスケアの研究。">
+  
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --primary: #059669;
+      --primary-dark: #047857;
+      --primary-light: #d1fae5;
+      --accent: #2563eb;
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --bg-main: #f9fafb;
+      --bg-card: #ffffff;
+      --border: #e5e7eb;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.65;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      z-index: 1000;
+      padding: 0.75rem 1.5rem;
+    }
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .nav-brand {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .nav-brand span { color: var(--primary); }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.25rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+    .lang-switcher {
+      display: flex;
+      gap: 0.25rem;
+      background: #f3f4f6;
+      padding: 3px;
+      border-radius: 8px;
+    }
+    .lang-btn {
+      background: none;
+      border: none;
+      padding: 5px 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 4rem 1.5rem 3.5rem;
+    }
+    .hero-container {
+      max-width: 1050px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+    .hero-img-box {
+      flex: 0 0 190px;
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid #ffffff;
+      box-shadow: var(--shadow-hover);
+      background: #e5e7eb;
+    }
+    .hero-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero-text { flex: 1; min-width: 300px; }
+    .hero-badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      margin-bottom: 0.75rem;
+    }
+    .hero-name {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+    .hero-title {
+      font-size: 1.15rem;
+      color: var(--primary-dark);
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .hero-dept {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+    .hero-socials {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .social-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.9rem;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-size: 0.85rem;
+      font-weight: 600;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      transition: all 0.2s;
+    }
+    .social-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    /* Section Commons */
+    section { padding: 3rem 0; }
+    .section-header {
+      margin-bottom: 1.75rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.75rem;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    .section-title {
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: #111827;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .section-title i { color: var(--primary); font-size: 1.3rem; }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+    }
+
+    /* Research Pillars Grid */
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .research-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      transition: all 0.2s;
+    }
+    .research-card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-2px);
+    }
+    .research-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .research-card h4 {
+      font-size: 1.05rem;
+      margin-bottom: 0.4rem;
+      color: #111827;
+    }
+    .research-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Subheadings */
+    .sub-heading {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* 1. Education (Fixed Grid Cards) */
+    .edu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .edu-item {
+      background: #f8fafc;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.2rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    }
+    .edu-year {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.2rem;
+    }
+    .edu-degree {
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: #111827;
+      margin-bottom: 0.2rem;
+    }
+    .edu-school {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    /* 2. Experience (Vertical Timeline - Reverse Chronological) */
+    .timeline {
+      position: relative;
+      padding-left: 1.75rem;
+      border-left: 2px solid var(--border);
+      margin-left: 0.75rem;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.4rem;
+    }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-dot {
+      position: absolute;
+      left: -2.35rem;
+      top: 0.25rem;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 3px solid #ffffff;
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+    .timeline-dot.current {
+      background: #2563eb;
+      box-shadow: 0 0 0 2px #2563eb;
+    }
+    .timeline-year {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.15rem;
+    }
+    .timeline-year.current { color: #2563eb; }
+    .timeline-role {
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: #111827;
+    }
+    .timeline-org {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Publications List */
+    .pub-stats-box {
+      display: flex;
+      gap: 1.5rem;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .pub-stat-val { font-size: 1.4rem; font-weight: 800; color: var(--primary-dark); }
+    .pub-stat-lbl { font-size: 0.85rem; color: var(--text-muted); font-weight: 500; }
+    .pub-list { list-style: none; }
+    .pub-item {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .pub-item:last-child { border-bottom: none; }
+    .pub-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: #e0e7ff;
+      color: #3730a3;
+      margin-bottom: 0.35rem;
+    }
+    .pub-tag.book { background: #fef3c7; color: #92400e; }
+    .pub-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 0.25rem;
+      line-height: 1.4;
+    }
+    .pub-authors { font-size: 0.88rem; color: var(--text-muted); }
+    .pub-journal { font-style: italic; color: #4b5563; }
+
+    /* Media & Activities */
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .media-item {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s;
+    }
+    .media-item:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow);
+    }
+    .media-icon {
+      font-size: 1.2rem;
+      color: var(--primary);
+      padding-top: 0.15rem;
+    }
+    .media-outlet { font-size: 0.85rem; font-weight: 700; color: var(--primary-dark); }
+    .media-headline { font-size: 0.95rem; font-weight: 600; color: #111827; margin: 0.2rem 0; }
+    .media-desc { font-size: 0.82rem; color: var(--text-muted); }
+
+    /* Contact Cards */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+    .contact-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .contact-card i {
+      font-size: 1.75rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+    .contact-card h4 { font-size: 1rem; margin-bottom: 0.3rem; color: #111827; }
+    .contact-card p, .contact-card a { font-size: 0.9rem; color: var(--text-muted); text-decoration: none; }
+    .contact-card a:hover { color: var(--primary); text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a { color: #d1d5db; text-decoration: none; }
+    footer a:hover { color: #ffffff; }
+
+    @media (max-width: 768px) {
+      .hero-container { justify-content: center; text-align: center; gap: 1.5rem; }
+      .hero-socials { justify-content: center; }
+      .nav-links { display: none; }
+      .navbar { padding: 0.75rem 1rem; }
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-          <div class="nav-brand">
-    <h2 data-i18n="nav.brand">林 永周 (YeongJoo LIM)</h2>
-</div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link" data-i18n="nav.about">プロフィール</a></li>
-                <li><a href="#research" class="nav-link" data-i18n="nav.research">研究内容</a></li>
-                <li><a href="#publications" class="nav-link" data-i18n="nav.publications">業績</a></li>
-                <li><a href="#teaching" class="nav-link" data-i18n="nav.teaching">教育</a></li>
-                <li><a href="#committee" class="nav-link" data-i18n="nav.committee">委員歴</a></li>
-                <li><a href="#media" class="nav-link" data-i18n="nav.media">取材</a></li>
-                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">連絡先</a></li>
-            </ul>
-            <div class="language-switcher">
-                <button class="lang-btn active" data-lang="ja">日本語</button>
-                <button class="lang-btn" data-lang="en">English</button>
-                <button class="lang-btn" data-lang="ko">한국어</button>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-image">
-                    <div class="profile-placeholder">
-                        <img src="images/profile-lim.jpg" alt="Professor Yeongjoo LIM">
-                    </div>
-                </div>
-                <div class="hero-text">
-                   <h1 data-i18n="hero.title">教授 林 永周 (YeongJoo LIM)</h1> <p class="title" data-i18n="hero.field">技術経営 · アントレプレナーシップ | 立命館大学</p> <p class="subtitle" data-i18n="hero.department">経営学部 教授 / 延世大学 客員教授</p>
-                    <div class="social-links">
-                        <a href="mailto:lim40@fc.ritsumei.ac.jp" class="social-link" aria-label="Email" target="_blank"><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.facebook.com/yeongjoo.lim" class="social-link" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://scholar.google.com/citations?user=2j-hq6EAAAAJ&hl=ja" class="social-link" aria-label="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                        <a href="https://research-db.ritsumei.ac.jp/rithp/k03/resid/S001137" class="social-link" aria-label="Ritsumeikan Research" target="_blank"><i class="fas fa-university"></i></a>
-                    </div>
-                </div>
-            </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-brand">
+        <i class="fas fa-university"></i>
+        <span id="navBrand">林 永周 (YeongJoo LIM)</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" id="navAbout">About</a></li>
+        <li><a href="#research" id="navResearch">Research</a></li>
+        <li><a href="#publications" id="navPublications">Publications</a></li>
+        <li><a href="#activities" id="navActivities">Activities</a></li>
+        <li><a href="#contact" id="navContact">Contact</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn" onclick="setLang('ko')">한국어</button>
+        <button class="lang-btn active" onclick="setLang('ja')">日本語</button>
+        <button class="lang-btn" onclick="setLang('en')">English</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-container">
+      <div class="hero-img-box">
+        <img src="images/profile-lim.jpg" alt="Prof. YeongJoo LIM" onerror="this.src='https://via.placeholder.com/190?text=Prof.+Lim'">
+      </div>
+      <div class="hero-text">
+        <div class="hero-badge" id="heroBadge">立命館大学 経営学部 教授</div>
+        <h1 class="hero-name" id="heroName">林 永周 (YeongJoo LIM)</h1>
+        <div class="hero-title" id="heroTitle">立命館大学 経営学部 教授 / 延世大学 客員教授</div>
+        <div class="hero-dept" id="heroDept">技術経営（MOT） · アントレプレナーシップ教育 · スタートアップエコシステム</div>
+        <div class="hero-socials">
+          <a href="mailto:lim40@fc.ritsumei.ac.jp" class="social-btn"><i class="fas fa-envelope"></i> Email</a>
+          <a href="https://scholar.google.com/citations?user=2j-hq6EAAAAJ&hl=ja" target="_blank" class="social-btn"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+          <a href="https://research-db.ritsumei.ac.jp/rithp/k03/resid/S001137" target="_blank" class="social-btn"><i class="fas fa-book-reader"></i> 立命館 研究者DB</a>
+          <a href="https://www.facebook.com/yeongjoo.lim" target="_blank" class="social-btn"><i class="fab fa-facebook"></i> Facebook</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
 
     <!-- About Section -->
-   <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="about.title">プロフィール</h2>
-            <div class="content-card">
-                <h3 data-i18n="about.subtitle">略歴</h3>
-                <p data-i18n="about.description">
-                    技術経営（MOT）およびアントレプレナーシップ（起業家教育・スタートアップエコシステム）を専門とする研究者です。イノベーション創出、デジタルヘルスケア、社会実装に向けた組織・制度の研究と教育実践に取り組んでいます。
-                </p>
+    <section id="about">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-user-tie"></i> <span id="secAboutTitle">プロフィール / 略歴</span></h2>
+      </div>
+      <div class="card">
+        <p id="bioDescription" style="font-size: 1.05rem; color: #374151; margin-bottom: 2rem; line-height: 1.75;">
+          技術経営（MOT）およびアントレプレナーシップ（起業家教育・スタートアップエコシステム）を専門とする研究者です。イノベーション創出、デジタルヘルスケア、社会実装に向けた組織・制度の研究と教育実践に取り組んでいます。
+        </p>
 
-                <!-- 🎓 학력 (Education) : 변동 없는 고정 타임라인 -->
-                <h3 style="margin-top: 2.5rem; color: #10b981;" data-i18n="about.educationTitle">学歴</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-year" data-i18n="education.year1">2015年3月</div>
-                        <div class="timeline-content">
-                            <h4 data-i18n="education.event1">立命館大学大学院 テクノロジー・マネジメント研究科 博士課程修了 博士（技術経営）</h4>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year" data-i18n="education.year2">2009年3月</div>
-                        <div class="timeline-content">
-                            <h4 data-i18n="education.event2">立命館大学大学院 テクノロジー・マネジメント研究科 修士課程修了 修士（技術経営）</h4>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year" data-i18n="education.year3">2007年3月</div>
-                        <div class="timeline-content">
-                            <h4 data-i18n="education.event3">立命館アジア太平洋大学（APU） アジア太平洋マネジメント学部 卒業</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 💼 주요 경력 (Professional Experience) : 최신순 역순 배치 (맨 위에 추가 용이) -->
-                <h3 style="margin-top: 2.5rem; color: #10b981;" data-i18n="about.experienceTitle">職歴・主な経歴</h3>
-                <div class="timeline">
-                    <!-- ★ 향후 새 경력이 생기면 이 맨 위에 timeline-item 블록을 추가하시면 됩니다 ★ -->
-                    <div class="timeline-item">
-                        <div class="timeline-year" data-i18n="experience.year1">2026年4月〜現在</div>
-                        <div class="timeline-content">
-                            <h4 data-i18n="experience.event1">立命館大学 経営学部 教授</h4>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year" data-i18n="experience.year2">2026年4月〜現在</div>
-                        <div class="timeline-content">
-                            <h4 data-i18n="experience.event2">延世大学（Yonsei University） 未来キャンパス バイオ技術経営 客員教授</h4>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year" data-i18n="experience.year3">2021年4月〜現在</div>
-                        <div class="timeline-content">
-                            <h4 data-i18n="experience.event3">立命館大学 学生部長補佐</h4>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year" data-i18n="experience.year4">2021年4月〜2026年3月</div>
-                        <div class="timeline-content">
-                            <h4 data-i18n="experience.event4">立命館大学 経営学部 准教授</h4>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year" data-i18n="experience.year5">2017年4月〜2021年3月</div>
-                        <div class="timeline-content">
-                            <h4 data-i18n="experience.event5">立命館大学 経営学部 助教 / 講師</h4>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year" data-i18n="experience.year6">2016年4月〜2019年3月</div>
-                        <div class="timeline-content">
-                            <h4 data-i18n="experience.event6">京都情報大学院大学（KCGI） 非常勤講師</h4>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year" data-i18n="experience.year7">2015年4月〜2017年3月</div>
-                        <div class="timeline-content">
-                            <h4 data-i18n="experience.event7">立命館大学大学院 テクノロジー・マネジメント研究科 非常勤講師</h4>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <!-- 1. 学歴 (Education) - 고정 영역 -->
+        <h3 class="sub-heading"><i class="fas fa-graduation-cap"></i> <span id="eduHeading">学歴</span></h3>
+        <div class="edu-grid" id="educationList">
+          <!-- Populated by JS -->
         </div>
+
+        <!-- 2. 職歴・主な経歴 (Experience) - 최신순 타임라인 (상단 추가 용이) -->
+        <h3 class="sub-heading" style="margin-top: 2rem;"><i class="fas fa-briefcase"></i> <span id="expHeading">職歴・主な経歴</span></h3>
+        <div class="timeline" id="experienceList">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- 3. 資格・ファシリテーター (Qualifications) -->
+        <h3 class="sub-heading" style="margin-top: 2.5rem;"><i class="fas fa-certificate"></i> <span id="certHeading">資格・認定活動</span></h3>
+        <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem;">
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem;" id="certList">
+            <!-- Populated by JS -->
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Research Section -->
-    <section id="research" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title" data-i18n="research.title">研究内容</h2>
-            <div class="content-card">
-                <h3 data-i18n="research.subtitle">研究テーマ</h3>
-                <p data-i18n="research.description">[主要な研究テーマの概要を記載してください。]</p>
-                
-                <div class="research-areas">
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-microscope"></i>
-                        </div>
-                        <h4 data-i18n="research.area1">研究分野 1</h4>
-                        <p data-i18n="research.area1Desc">[研究分野の説明文]</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-flask"></i>
-                        </div>
-                        <h4 data-i18n="research.area2">研究分野 2</h4>
-                        <p data-i18n="research.area2Desc">[研究分野の説明文]</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-atom"></i>
-                        </div>
-                        <h4 data-i18n="research.area3">研究分野 3</h4>
-                        <p data-i18n="research.area3Desc">[研究分野の説明文]</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h4 data-i18n="research.area4">モバイルヘルスケアの社会実装</h4>
-                        <p data-i18n="research.area4Desc">モバイル技術を活用した医療・健康管理サービスの普及と社会実装に関する研究。</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h4 data-i18n="research.area5">バイオ炭の社会実装</h4>
-                        <p data-i18n="research.area5Desc">バイオ炭を活用した環境保全型農業の推進と持続可能な社会の実現に関する研究。</p>
-                    </div>
-                </div>
-
-                <h3 style="margin-top: 3rem;" data-i18n="research.keywordsTitle">研究キーワード</h3>
-                <div class="keywords">
-                    <span class="keyword" data-i18n="research.keyword1">キーワード1</span>
-                    <span class="keyword" data-i18n="research.keyword2">キーワード2</span>
-                    <span class="keyword" data-i18n="research.keyword3">キーワード3</span>
-                    <span class="keyword" data-i18n="research.keyword4">キーワード4</span>
-                    <span class="keyword" data-i18n="research.keyword5">キーワード5</span>
-                    <span class="keyword" data-i18n="research.keyword6">モバイルヘルスケア</span>
-                    <span class="keyword" data-i18n="research.keyword7">バイオ炭</span>
-                </div>
-            </div>
-        </div>
+    <section id="research">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-atom"></i> <span id="secResearchTitle">研究分野 (Research Areas)</span></h2>
+      </div>
+      <div class="research-grid" id="researchGrid">
+        <!-- Populated by JS -->
+      </div>
     </section>
 
     <!-- Publications Section -->
-    <section id="publications" class="section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="publications.title">主要業績</h2>
-            <div class="content-card">
-                <!-- External Links Section -->
-                <div class="publications-links">
-                    <a href="https://research-db.ritsumei.ac.jp/rithp/k05/resid/S001137/821" target="_blank" class="pub-link-button">
-                        <i class="fas fa-file-alt"></i>
-                        <span data-i18n="publications.allPapersLink">全論文リストを見る（立命館大学研究者DB）</span>
-                    </a>
-                    <a href="https://scholar.google.com/citations?user=2j-hq6EAAAAJ&hl=ja" target="_blank" class="pub-link-button">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span data-i18n="publications.scholarLink">Google Scholar プロフィール</span>
-                    </a>
-                </div>
-
-                <!-- Scopus Stats -->
-                <div class="scopus-stats">
-                    <h3 data-i18n="publications.scopusTitle">Scopus統計（2025年時点）</h3>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-number">32</div>
-                            <div class="stat-label" data-i18n="publications.papers">論文</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">328</div>
-                            <div class="stat-label" data-i18n="publications.citations">引用</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">11</div>
-                            <div class="stat-label">h-index</div>
-                        </div>
-                    </div>
-                </div>
-
-                <h3 data-i18n="publications.journalTitle">代表的な論文（抜粋）</h3>
-                <ul class="publication-list">
-                    <li>
-                        <strong>Lim, Y.</strong> (2025). 
-                        "Adoption of AI Services Based on the Technology Acceptance Model: A Meta-Research Approach". 
-                        <em>International Journal of Technology Diffusion</em>, Vol. 15, No. 1.
-                    </li>
-                    <li>
-                        <strong>Lim, Y.</strong> (2025). 
-                        "Determinants and implications of mobile health application acceptability in high-income countries: an assessment". 
-                        <em>Drug Discovery Today</em>, Vol. 30, No. 10.
-                    </li>
-                    <li>
-                        <strong>Lim, Y.</strong> (2025). 
-                        "Does the Intuition of Top Managers Influence Corporate Entrepreneurship?". 
-                        <em>Administrative Sciences</em>, Vol. 15, No. 8.
-                    </li>
-                    <li>
-                        <strong>Lim, Y.</strong> (2025). 
-                        "Entrepreneurial Intention Among Engineering Students: The Moderating Role of Entrepreneurship Education in Japan". 
-                        <em>Behavioral Sciences</em>, Vol. 15, No. 5, 663.
-                    </li>
-                </ul>
-
-                <h3 style="margin-top: 2rem;" data-i18n="publications.bookTitle">著書</h3>
-                <ul class="publication-list">
-                    <li>
-                        <strong>Lim, Y.</strong> (2022). 
-                        "<em>Digital Healthcare Development and mHealth in South Korea</em>". 
-                        Springer. DOI: 10.1007/978-981-19-4230-3_4
-                    </li>
-                </ul>
-                
-                <p style="margin-top: 2rem; color: #4a5568;">
-                    <strong>Scopus統計:</strong> 論文数 32件 | 引用数 328回 | h-index 11
-                </p>
-            </div>
+    <section id="publications">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-book"></i> <span id="secPubTitle">主要業績 (Selected Publications)</span></h2>
+        <a href="https://scholar.google.com/citations?user=2j-hq6EAAAAJ&hl=ja" target="_blank" style="font-size: 0.9rem; color: var(--primary); text-decoration: none; font-weight: 600;">
+          Google Scholar <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="card">
+        <div class="pub-stats-box">
+          <div>
+            <div class="pub-stat-val">32+</div>
+            <div class="pub-stat-lbl">Published Papers</div>
+          </div>
+          <div>
+            <div class="pub-stat-val">328+</div>
+            <div class="pub-stat-lbl">Citations (Scopus)</div>
+          </div>
+          <div>
+            <div class="pub-stat-val">11</div>
+            <div class="pub-stat-lbl">h-index</div>
+          </div>
         </div>
+
+        <ul class="pub-list" id="pubList">
+          <!-- Populated by JS -->
+        </ul>
+      </div>
     </section>
 
-    <!-- Teaching Section -->
-    <section id="teaching" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title" data-i18n="teaching.title">教育活動</h2>
-            <div class="content-card">
-                <h3 data-i18n="teaching.coursesTitle">担当講義</h3>
-                <div class="course-grid">
-                    <div class="course-card">
-                        <h4><i class="fas fa-chalkboard-teacher"></i> <span data-i18n="courses.course1">[講義名]</span></h4>
-                        <p class="course-info" data-i18n="teaching.courseLevel">[学部/大学院] | [学期]</p>
-                        <p data-i18n="teaching.courseDesc">[講義の概要説明]</p>
-                    </div>
-                    <div class="course-card">
-                        <h4><i class="fas fa-chalkboard-teacher"></i> <span data-i18n="courses.course2">[講義名]</span></h4>
-                        <p class="course-info" data-i18n="teaching.courseLevel">[学部/大学院] | [学期]</p>
-                        <p data-i18n="teaching.courseDesc">[講義の概要説明]</p>
-                    </div>
-                    <div class="course-card">
-                        <h4><i class="fas fa-chalkboard-teacher"></i> <span data-i18n="courses.course3">[講義名]</span></h4>
-                        <p class="course-info" data-i18n="teaching.courseLevel">[学部/大学院] | [学期]</p>
-                        <p data-i18n="teaching.courseDesc">[講義の概要説明]</p>
-                    </div>
-                </div>
-
-                <h3 style="margin-top: 2rem;" data-i18n="teaching.labTitle">研究室について</h3>
-                <p data-i18n="teaching.labDesc">[研究室の雰囲気、指導方針、学生へのメッセージなどを記載してください。]</p>
-                
-                <h3 style="margin-top: 2rem;" data-i18n="teaching.certificationTitle">認定資格</h3>
-                <div class="certification-card">
-                    <div class="certification-icon">
-                        🧱
-                    </div>
-                    <div class="certification-content">
-                        <h4 data-i18n="teaching.legoTitle">LEGO® SERIOUS PLAY® メソッドと教材活用トレーニング修了認定ファシリテータ</h4>
-                        <p data-i18n="teaching.legoDesc">LEGO® SERIOUS PLAY®は、レゴブロックを使った革新的なファシリテーション手法です。組織開発、戦略立案、イノベーション創出のワークショップで活用しています。</p>
-                    </div>
-                </div>
-                
-                <div class="lab-info">
-                    <div class="info-item">
-                        <i class="fas fa-users"></i>
-                        <span data-i18n="teaching.recruiting">学生募集中（学部生・大学院生）</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <span data-i18n="teaching.labVisit">研究室見学はお気軽にご連絡ください</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Committee/Board Section -->
-    <section id="committee" class="section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="committee.title">委員歴・社会活動</h2>
-            <div class="content-card">
-                <h3 data-i18n="committee.currentTitle">現在</h3>
-                <ul class="committee-list">
-                    <li>
-                        <div class="committee-period" data-i18n="committee.current1Period">2025/12/20 - 現在</div>
-                        <div class="committee-content">
-                            <strong data-i18n="committee.current1Org">大阪府教育委員会・大阪府学校教育審議会</strong>
-                            <span data-i18n="committee.current1Role">専門委員</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="committee-period" data-i18n="committee.current2Period">2023/04 - 現在</div>
-                        <div class="committee-content">
-                            <strong data-i18n="committee.current2Org">日本経営システム学会　関西支部</strong>
-                            <span data-i18n="committee.current2Role">副支部長</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="committee-period" data-i18n="committee.current3Period">2022/07 - 現在</div>
-                        <div class="committee-content">
-                            <strong data-i18n="committee.current3Org">Journal of Digital Life</strong>
-                            <span data-i18n="committee.current3Role">Editorial Board Member</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="committee-period" data-i18n="committee.current4Period">2021/04 - 現在</div>
-                        <div class="committee-content">
-                            <strong data-i18n="committee.current4Org">一般社団法人日本私立大学連盟 学生委員会 学生生活実態調査分科会</strong>
-                            <span data-i18n="committee.current4Role">委員</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="committee-period" data-i18n="committee.current5Period">2021/04 - 現在</div>
-                        <div class="committee-content">
-                            <strong data-i18n="committee.current5Org">日本経営システム学会　学会誌「IJAMS」編集委員会</strong>
-                            <span data-i18n="committee.current5Role">編集委員</span>
-                        </div>
-                    </li>
-                </ul>
-
-                <h3 style="margin-top: 2rem;" data-i18n="committee.pastTitle">過去</h3>
-                <ul class="committee-list">
-                    <li>
-                        <div class="committee-period" data-i18n="committee.past1Period">2021/04 - 2025/03</div>
-                        <div class="committee-content">
-                            <strong data-i18n="committee.past1Org">立命館大学 学生部</strong>
-                            <span data-i18n="committee.past1Role">副部長（OIC担当）</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="committee-period" data-i18n="committee.past2Period">2019/06 - 2021/03</div>
-                        <div class="committee-content">
-                            <strong data-i18n="committee.past2Org">草津市販路開拓推進補助金</strong>
-                            <span data-i18n="committee.past2Role">審査委員</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Media/Interview Section -->
-    <section id="media" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title" data-i18n="media.title">取材・メディア掲載</h2>
-            <div class="content-card">
-                <p data-i18n="media.description">取材やメディア出演のご依頼を承っております。研究内容の紹介、専門分野に関するコメント、講演などお気軽にお問い合わせください。</p>
-                
-                <h3 style="margin-top: 2rem;" data-i18n="media.topicsTitle">対応可能なトピック</h3>
-                <div class="media-topics">
-                    <div class="topic-card">
-                        <div class="topic-icon">
-                            <i class="fas fa-microphone"></i>
-                        </div>
-                        <h4 data-i18n="media.topic1Title">研究内容の解説</h4>
-                        <p data-i18n="media.topic1Desc">最新の研究成果や専門分野について、一般向けにわかりやすく解説いたします。</p>
-                    </div>
-                    <div class="topic-card">
-                        <div class="topic-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <h4 data-i18n="media.topic2Title">専門家コメント</h4>
-                        <p data-i18n="media.topic2Desc">専門分野に関連するニュースや社会問題について、学術的見地からコメントを提供します。</p>
-                    </div>
-                    <div class="topic-card">
-                        <div class="topic-icon">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <h4 data-i18n="media.topic3Title">講演・セミナー</h4>
-                        <p data-i18n="media.topic3Desc">企業、学校、一般向けの講演やセミナーの講師としてお話しさせていただきます。</p>
-                    </div>
-                </div>
-
-                <h3 style="margin-top: 2rem;" data-i18n="media.pastTitle">過去の掲載実績</h3>
-                <ul class="media-list">
-                    <li>
-                        <div class="media-date" data-i18n="media.media1Date">2024年</div>
-                        <div class="media-content">
-                            <strong data-i18n="media.media1Name">HR Insight（韓国）</strong> - <span data-i18n="media.media1Title">人事・経営専門メディア掲載</span><br>
-                            <span class="media-desc" data-i18n="media.media1Desc">技術経営、アントレプレナーシップに関する専門家インタビュー（複数回掲載）</span><br>
-                            <a href="https://www.hrinsight.co.kr/view/view.asp?in_cate=114&gopage=1&bi_pidx=27603" target="_blank" class="media-link"><i class="fas fa-external-link-alt"></i> 記事を読む</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media-date" data-i18n="media.media2Date">2023年2月</div>
-                        <div class="media-content">
-                            <strong data-i18n="media.media2Name">shiRUto（立命館大学）</strong> - <span data-i18n="media.media2Title">大学に期待される社会への拡張。産学連携で起こす「小さな社会変革」とは</span><br>
-                            <span class="media-desc" data-i18n="media.media2Desc">産学連携による社会課題解決の取り組みについて</span><br>
-                            <a href="https://shiruto.jp/sp/4725/" target="_blank" class="media-link"><i class="fas fa-external-link-alt"></i> 記事を読む</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media-date" data-i18n="media.media3Date">2022年</div>
-                        <div class="media-content">
-                            <strong data-i18n="media.media3Name">EMOTIONAL LINK</strong> - <span data-i18n="media.media3Title">起業家が身につけておきたいアントレプレナーシップとは？</span><br>
-                            <span class="media-desc" data-i18n="media.media3Desc">アントレプレナーシップ教育と起業家精神について</span><br>
-                            <a href="https://emotional-link.co.jp/lim-prof/" target="_blank" class="media-link"><i class="fas fa-external-link-alt"></i> 記事を読む</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media-date" data-i18n="media.media4Date">2021年</div>
-                        <div class="media-content">
-                            <strong data-i18n="media.media4Name">ブルーバックスアウトリーチ（講談社）</strong> - <span data-i18n="media.media4Title">バイオ炭で「食べるだけでエコ」な環境保全型農業を全国に広めたい</span><br>
-                            <span class="media-desc" data-i18n="media.media4Desc">環境問題解決に向けた研究プロジェクトの紹介</span><br>
-                            <a href="https://outreach.bluebacks.jp/memberinfo/4366" target="_blank" class="media-link"><i class="fas fa-external-link-alt"></i> 記事を読む</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="media-date" data-i18n="media.media5Date">継続中</div>
-                        <div class="media-content">
-                            <strong data-i18n="media.media5Name">Klik and Pay</strong> - <span data-i18n="media.media5Title">ビジネス・起業関連インタビュー</span><br>
-                            <span class="media-desc" data-i18n="media.media5Desc">スタートアップ支援とビジネス開発に関する専門家として</span><br>
-                            <a href="https://klikandpay.co.jp/interview-lim/" target="_blank" class="media-link"><i class="fas fa-external-link-alt"></i> 記事を読む</a>
-                        </div>
-                    </li>
-                </ul>
-
-                <div class="media-contact">
-                    <i class="fas fa-envelope-open-text"></i>
-                    <div>
-                        <h4 data-i18n="media.contactTitle">取材依頼について</h4>
-                        <p data-i18n="media.contactDesc">取材のご依頼は、下記の連絡先フォームまたはメールにてお願いいたします。内容を確認の上、ご返信させていただきます。</p>
-                        <a href="#contact" class="btn-media" data-i18n="media.contactButton">お問い合わせフォームへ</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Activities & Media Section -->
+    <section id="activities">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-newspaper"></i> <span id="secMediaTitle">社会活動・取材掲載 (Activities & Media)</span></h2>
+      </div>
+      <div class="media-grid" id="mediaGrid">
+        <!-- Populated by JS -->
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="contact.title">連絡先</h2>
-            <div class="content-card">
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <h3 data-i18n="contact.officeTitle">オフィス情報</h3>
-                        <div class="contact-item">
-                            <i class="fas fa-university"></i>
-                            <div>
-                                <strong data-i18n="contact.university">立命館大学</strong><br>
-                                <span data-i18n="contact.department">経営学部 経営学科</span><br>
-                                <span data-i18n="contact.building">大阪いばらきキャンパス（OIC）</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <strong data-i18n="contact.email">Email:</strong><br>
-                                <a href="mailto:lim40@fc.ritsumei.ac.jp" style="color: var(--secondary-color); text-decoration: none;">lim40@fc.ritsumei.ac.jp</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-globe"></i>
-                            <div>
-                                <strong data-i18n="contact.website">Website:</strong><br>
-                                <a href="https://research-db.ritsumei.ac.jp/rithp/k03/resid/S001137" target="_blank" style="color: var(--secondary-color); text-decoration: none;">立命館大学研究者データベース</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form-container">
-                        <h3 data-i18n="contact.formTitle">お問い合わせ</h3>
-                        <form id="contactForm" class="contact-form">
-                            <div class="form-group">
-                                <label for="name" data-i18n="contact.name">お名前 *</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" data-i18n="contact.emailLabel">メールアドレス *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject" data-i18n="contact.subject">件名 *</label>
-                                <input type="text" id="subject" name="subject" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message" data-i18n="contact.message">メッセージ *</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn-primary" data-i18n="contact.submit">送信</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+    <section id="contact">
+      <div class="section-header">
+        <h2 class="section-title"><i class="fas fa-map-marker-alt"></i> <span id="secContactTitle">連絡先 (Contact & Office)</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <i class="fas fa-university"></i>
+          <h4 id="contactAffilTitle">所属</h4>
+          <p id="contactAffilDesc">立命館大学 経営学部<br>大阪いばらきキャンパス (OIC)</p>
         </div>
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h4>Email</h4>
+          <p><a href="mailto:lim40@fc.ritsumei.ac.jp">lim40@fc.ritsumei.ac.jp</a></p>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-external-link-alt"></i>
+          <h4 id="contactDbTitle">研究者データベース</h4>
+          <p><a href="https://research-db.ritsumei.ac.jp/rithp/k03/resid/S001137" target="_blank">Ritsumeikan DB <i class="fas fa-external-link-alt"></i></a></p>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-           <p data-i18n="footer.copyright">&copy; 2026 YeongJoo LIM. All rights reserved.</p>
-            <p><span data-i18n="footer.lastUpdated">最終更新日:</span> <span id="lastUpdated"></span></p>
-        </div>
-    </footer>
+  </main>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
+  <!-- Footer -->
+  <footer>
+    <div class="container" style="padding: 0;">
+      <p>&copy; 2026 YeongJoo LIM (林 永周). All Rights Reserved.</p>
+      <p style="margin-top: 0.5rem; font-size: 0.8rem; color: #6b7280;">Professor, College of Business Administration, Ritsumeikan University | Visiting Professor, Yonsei University</p>
+    </div>
+  </footer>
+
+  <!-- Embedded Multilingual Data & Controller -->
+  <script>
+    const DATA = {
+      ja: {
+        navBrand: "林 永周 (YeongJoo LIM)",
+        navAbout: "プロフィール",
+        navResearch: "研究内容",
+        navPublications: "主要業績",
+        navActivities: "社会活動・取材",
+        navContact: "連絡先",
+        heroBadge: "立命館大学 経営学部 教授",
+        heroName: "林 永周 (YeongJoo LIM)",
+        heroTitle: "立命館大学 経営学部 教授 / 延世大学 客員教授",
+        heroDept: "技術経営（MOT） · アントレプレナーシップ教育 · スタートアップエコシステム",
+        secAboutTitle: "プロフィール / 略歴",
+        bioDescription: "技術経営（MOT）およびアントレプレナーシップ（起業家教育・スタートアップエコシステム）を専門とする研究者です。イノベーション創出、デジタルヘルスケア、社会実装に向けた組織・制度の研究と教育実践に取り組んでいます。",
+        eduHeading: "学歴",
+        expHeading: "職歴・主な経歴",
+        certHeading: "資格・認定活動",
+        secResearchTitle: "研究分野 (Research Areas)",
+        secPubTitle: "主要業績 (Selected Publications)",
+        secMediaTitle: "社会活動・取材掲載 (Activities & Media)",
+        secContactTitle: "連絡先 (Contact)",
+        contactAffilTitle: "所属",
+        contactAffilDesc: "立命館大学 経営学部<br>大阪いばらきキャンパス (OIC)",
+        contactDbTitle: "立命館大学研究者DB",
+        
+        education: [
+          { period: "2015年3月", degree: "博士（技術経営）", school: "立命館大学大学院 テクノロジー・マネジメント研究科 博士課程修了" },
+          { period: "2009年3月", degree: "修士（技術経営）", school: "立命館大学大学院 テクノロジー・マネジメント研究科 修士課程修了" },
+          { period: "2007年3月", degree: "学士（経営学）", school: "立命館アジア太平洋大学（APU） アジア太平洋マネジメント学部 卒業" }
+        ],
+        // ★ 경력 추가 시 이 목록 맨 위에 추가하시면 됩니다 ★
+        experience: [
+          { period: "2026年4月 - 現在", role: "教授", org: "立命館大学 経営学部", current: true },
+          { period: "2026年4月 - 現在", role: "客員教授", org: "延世大学（Yonsei University） 未来キャンパス バイオ技術経営", current: true },
+          { period: "2021年4月 - 現在", role: "学生部長補佐", org: "立命館大学", current: true },
+          { period: "2021年4月 - 2026年3月", role: "准教授", org: "立命館大学 経営学部", current: false },
+          { period: "2017年4月 - 2021年3月", role: "助教 / 講師", org: "立命館大学 経営学部", current: false },
+          { period: "2016年4月 - 2019年3月", role: "非常勤講師", org: "京都情報大学院大学（KCGI）", current: false },
+          { period: "2015年4月 - 2017年3月", role: "非常勤講師", org: "立命館大学大学院 テクノロジー・マネジメント研究科", current: false }
+        ],
+        certifications: [
+          "LEGO® SERIOUS PLAY® メソッドと教材活用トレーニング修了認定ファシリテータ",
+          "Startup Weekend ファシリテータ & オーガナイザー"
+        ],
+        research: [
+          { icon: "fa-lightbulb", title: "アントレプレナーシップ教育", desc: "起業家精神の育成手法、PBL（課題解決型学習）、大学発スタートアップエコシステムの構築に関する研究。" },
+          { icon: "fa-heartbeat", title: "デジタルヘルスケアの社会実装", desc: "mHealth、ウェアラブルデバイス、AIサービス等の医療・ヘルスケア分野における受容性モデルおよび政策分析。" },
+          { icon: "fa-network-wired", title: "バイオ・医薬品イノベーション", desc: "製薬・バイオテクノロジー産業における提携ネットワーク、スピンオフ（Spin-off）、希少疾患R&D戦略の研究。" }
+        ],
+        media: [
+          { outlet: "HR Insight（韓国）", title: "人事・経営専門メディア掲載", desc: "技術経営およびアントレプレナーシップに関する専門家インタビュー", url: "https://www.hrinsight.co.kr/view/view.asp?in_cate=114&gopage=1&bi_pidx=27603" },
+          { outlet: "shiRUto（立命館大学）", title: "産学連携で起こす「小さな社会変革」とは", desc: "産学連携による社会課題解決の取り組みについてのインタビュー", url: "https://shiruto.jp/sp/4725/" },
+          { outlet: "EMOTIONAL LINK", title: "起業家が身につけておきたいアントレプレナーシップ", desc: "アントレプレナーシップ教育と起業家精神についての専門解説", url: "https://emotional-link.co.jp/lim-prof/" },
+          { outlet: "ブルーバックス（講談社）", title: "バイオ炭の社会実装研究", desc: "環境問題解決と持続可能社会に向けたプロジェクト紹介", url: "https://outreach.bluebacks.jp/memberinfo/4366" }
+        ]
+      },
+
+      ko: {
+        navBrand: "임영주 교수 (YeongJoo LIM)",
+        navAbout: "프로필",
+        navResearch: "연구분야",
+        navPublications: "연구실적",
+        navActivities: "대외활동·미디어",
+        navContact: "연락처",
+        heroBadge: "리츠메이칸대학교 경영학부 교수",
+        heroName: "임영주 (YeongJoo LIM, Ph.D.)",
+        heroTitle: "리츠메이칸대학교 경영학부 교수 / 연세대학교 객원교수",
+        heroDept: "기술경영(MOT) · 기업가정신(창업) 교육 · 스타트업 생태계",
+        secAboutTitle: "프로필 / 약력",
+        bioDescription: "기술경영(MOT) 및 기업가정신(창업 교육·스타트업 생태계)을 전문으로 하는 연구자입니다. 혁신 창출, 디지털 헬스케어 및 바이오 혁신의 사회적 구현을 위한 조직과 제도의 연구와 실천에 매진하고 있습니다.",
+        eduHeading: "학력",
+        expHeading: "주요 경력",
+        certHeading: "공인 자격 및 전문 활동",
+        secResearchTitle: "주요 연구 분야 (Research Areas)",
+        secPubTitle: "대표 연구 실적 (Selected Publications)",
+        secMediaTitle: "사회적 활동 및 미디어 인터뷰",
+        secContactTitle: "연락처 및 연구실",
+        contactAffilTitle: "소속",
+        contactAffilDesc: "리츠메이칸대학교 경영학부<br>일본 오사카 이바라키 캠퍼스 (OIC)",
+        contactDbTitle: "리츠메이칸대 연구자 DB",
+        
+        education: [
+          { period: "2009.04 - 2015.03", degree: "기술경영학 박사 (Ph.D.)", school: "리츠메이칸대학교 대학원 기술경영연구과 박사과정 수료" },
+          { period: "2007.04 - 2009.03", degree: "기술경영학 석사 (Master)", school: "리츠메이칸대학교 대학원 기술경영연구과 석사과정 수료" },
+          { period: "2003.04 - 2007.03", degree: "경영학사 (B.B.A.)", school: "리츠메이칸 아시아태평양대학교(APU) 아시아태평양매니지먼트학부 졸업" }
+        ],
+        // ★ 경력 추가 시 이 목록 맨 위에 추가하시면 됩니다 ★
+        experience: [
+          { period: "2026.04 - 현재", role: "교수 (Professor)", org: "리츠메이칸대학교 경영학부", current: true },
+          { period: "2026.04 - 현재", role: "객원교수 (Visiting Professor)", org: "연세대학교 미래캠퍼스 바이오기술경영", current: true },
+          { period: "2021.04 - 현재", role: "학생처 부처장 (Associate Dean)", org: "리츠메이칸대학교", current: true },
+          { period: "2021.04 - 2026.03", role: "부교수 (Associate Professor)", org: "리츠메이칸대학교 경영학부", current: false },
+          { period: "2017.04 - 2021.03", role: "조교 / 강사 (Lecturer)", org: "리츠메이칸대학교 경영학부", current: false },
+          { period: "2016.04 - 2019.03", role: "비상근강사", org: "교토정보대학원대학 (KCGI)", current: false },
+          { period: "2015.04 - 2017.03", role: "비상근강사", org: "리츠메이칸대학교 대학원 기술경영연구과", current: false }
+        ],
+        certifications: [
+          "LEGO® SERIOUS PLAY® 공인 퍼실리테이터 (LEGO® SERIOUS PLAY® Certified Facilitator)",
+          "Startup Weekend 퍼실리테이터 & 오거나이저 (Facilitator & Organizer)"
+        ],
+        research: [
+          { icon: "fa-lightbulb", title: "기업가정신 교육 & 창업 생태계", desc: "청년 및 공학계열 학생의 창업 의향 연구, PBL(프로젝트 기반 학습) 및 대학 중심 스타트업 생태계 구축." },
+          { icon: "fa-heartbeat", title: "디지털 헬스케어 사회 구현", desc: "mHealth, 웨어러블 디바이스, AI 헬스케어 기술 수용 모델(TAM) 및 국제 비교 연구." },
+          { icon: "fa-network-wired", title: "바이오·의약 혁신 네트워크", desc: "제약·바이오 산업 간 딜(Deal) 네트워크, 제약 스핀오프(Spin-off) 및 희귀질환 R&D 전략 분석." }
+        ],
+        media: [
+          { outlet: "HR Insight (한국)", title: "인사·경영 전문 미디어 인터뷰", desc: "기술경영 및 기업가정신에 관한 전문가 기고 및 인터뷰", url: "https://www.hrinsight.co.kr/view/view.asp?in_cate=114&gopage=1&bi_pidx=27603" },
+          { outlet: "shiRUto (리츠메이칸대)", title: "산학협력으로 만드는 작은 사회 변혁", desc: "산학협력을 통한 사회문제 해결과 대학의 역할에 대한 인터뷰", url: "https://shiruto.jp/sp/4725/" },
+          { outlet: "EMOTIONAL LINK", title: "창업가가 갖추어야 할 기업가정신이란", desc: "기업가정신 교육과 실무적 창업가 정신에 대한 해설", url: "https://emotional-link.co.jp/lim-prof/" },
+          { outlet: "블루백스 (고단샤)", title: "바이오차(Biochar)의 사회적 실장 연구", desc: "환경문제 해결과 지속가능 사회를 위한 연구 프로젝트 소개", url: "https://outreach.bluebacks.jp/memberinfo/4366" }
+        ]
+      },
+
+      en: {
+        navBrand: "Prof. YeongJoo LIM",
+        navAbout: "About",
+        navResearch: "Research",
+        navPublications: "Publications",
+        navActivities: "Activities",
+        navContact: "Contact",
+        heroBadge: "Professor, Ritsumeikan University",
+        heroName: "YeongJoo LIM, Ph.D.",
+        heroTitle: "Professor, Ritsumeikan University / Visiting Professor, Yonsei University",
+        heroDept: "Technology Management (MOT) · Entrepreneurship Education · Startup Ecosystems",
+        secAboutTitle: "About & Biography",
+        bioDescription: "Professor specializing in Management of Technology (MOT) and Entrepreneurship. My research focuses on startup ecosystems, entrepreneurship education methodologies, digital healthcare implementation, and inter-organizational innovation networks.",
+        eduHeading: "Education",
+        expHeading: "Professional Experience",
+        certHeading: "Certifications & Activities",
+        secResearchTitle: "Research Areas",
+        secPubTitle: "Selected Publications",
+        secMediaTitle: "Activities & Media Features",
+        secContactTitle: "Contact & Office",
+        contactAffilTitle: "Affiliation",
+        contactAffilDesc: "College of Business Administration, Ritsumeikan University<br>Osaka Ibaraki Campus (OIC), Japan",
+        contactDbTitle: "Ritsumeikan Researcher DB",
+        
+        education: [
+          { period: "Apr. 2009 - Mar. 2015", degree: "Ph.D. in Technology Management", school: "Graduate School of Technology Management, Ritsumeikan University" },
+          { period: "Apr. 2007 - Mar. 2009", degree: "Master of Technology Management", school: "Graduate School of Technology Management, Ritsumeikan University" },
+          { period: "Apr. 2003 - Mar. 2007", degree: "Bachelor of Business Administration (B.B.A.)", school: "College of Asia Pacific Management, Ritsumeikan Asia Pacific University (APU)" }
+        ],
+        // ★ 경력 추가 시 이 목록 맨 위에 추가하시면 됩니다 ★
+        experience: [
+          { period: "Apr. 2026 - Present", role: "Professor", org: "College of Business Administration, Ritsumeikan University", current: true },
+          { period: "Apr. 2026 - Present", role: "Visiting Professor", org: "Biotechnology Management, Yonsei University Mirae Campus", current: true },
+          { period: "Apr. 2021 - Present", role: "Associate Dean of Student Affairs", org: "Ritsumeikan University", current: true },
+          { period: "Apr. 2021 - Mar. 2026", role: "Associate Professor", org: "College of Business Administration, Ritsumeikan University", current: false },
+          { period: "Apr. 2017 - Mar. 2021", role: "Assistant Professor / Lecturer", org: "College of Business Administration, Ritsumeikan University", current: false },
+          { period: "Apr. 2016 - Mar. 2019", role: "Lecturer (Part-time)", org: "The Kyoto College of Graduate Studies for Informatics (KCGI)", current: false },
+          { period: "Apr. 2015 - Mar. 2017", role: "Lecturer (Part-time)", org: "Graduate School of Technology Management, Ritsumeikan University", current: false }
+        ],
+        certifications: [
+          "LEGO® SERIOUS PLAY® Certified Facilitator",
+          "Startup Weekend Facilitator & Organizer"
+        ],
+        research: [
+          { icon: "fa-lightbulb", title: "Entrepreneurship Education", desc: "Pedagogical models for entrepreneurial mindset, project-based learning (PBL), and university-driven startup ecosystems." },
+          { icon: "fa-heartbeat", title: "Digital Healthcare Implementation", desc: "Technology Acceptance Model (TAM) analysis for mHealth, wearables, and healthcare AI solutions." },
+          { icon: "fa-network-wired", title: "Bio & Pharma Innovation", desc: "Inter-organizational deal networks, pharmaceutical spin-offs, and rare-disease R&D strategies." }
+        ],
+        media: [
+          { outlet: "HR Insight (Korea)", title: "Management & HR Expert Feature", desc: "Expert interview series on Technology Management and Entrepreneurship", url: "https://www.hrinsight.co.kr/view/view.asp?in_cate=114&gopage=1&bi_pidx=27603" },
+          { outlet: "shiRUto (Ritsumeikan Univ.)", title: "Social Innovation via Industry-Academia Collaboration", desc: "Feature on regional problem-solving through academic partnerships", url: "https://shiruto.jp/sp/4725/" },
+          { outlet: "EMOTIONAL LINK", title: "Essential Entrepreneurship for Founders", desc: "Key educational insights on developing entrepreneurial resilience and vision", url: "https://emotional-link.co.jp/lim-prof/" },
+          { outlet: "Bluebacks (Kodansha)", title: "Social Implementation of Biochar", desc: "Environmental project on sustainable agriculture and carbon neutrality", url: "https://outreach.bluebacks.jp/memberinfo/4366" }
+        ]
+      }
+    };
+
+    // ★ 새 논문이 나오면 이 목록의 맨 위에 객체를 하나 복사해 추가하시면 됩니다 ★
+    const PUBLICATIONS = [
+      {
+        tag: "Journal (2025)",
+        title: "Adoption of AI Services Based on the Technology Acceptance Model: A Meta-Research Approach",
+        authors: "Hwang, J., & Lim, Y.*",
+        journal: "International Journal of Technology Diffusion (IGI Global), Vol. 15, No. 1, 2025.",
+        isBook: false
+      },
+      {
+        tag: "Journal (2025)",
+        title: "Determinants and implications of mobile health application acceptability in high-income countries: an assessment",
+        authors: "Lim, Y.*, et al.",
+        journal: "Drug Discovery Today (Elsevier), Vol. 30, No. 10, 2025.",
+        isBook: false
+      },
+      {
+        tag: "Journal (2025)",
+        title: "Does the Intuition of Top Managers Influence Corporate Entrepreneurship?",
+        authors: "Kurata, K., Kageyama, I., Kobayashi, Y., Kodama, K., Li, X., & Lim, Y.*",
+        journal: "Administrative Sciences (MDPI), Vol. 15, No. 8, 2025.",
+        isBook: false
+      },
+      {
+        tag: "Journal (2025)",
+        title: "Entrepreneurial Intention Among Engineering Students: The Moderating Role of Entrepreneurship Education in Japan",
+        authors: "Kurata, K., Kodama, K., Kageyama, I., Kobayashi, Y., & Lim, Y.*",
+        journal: "Behavioral Sciences (MDPI), Vol. 15, No. 5, 663, 2025.",
+        isBook: false
+      },
+      {
+        tag: "Journal (2024)",
+        title: "The Rise of Spin-Offs: Fueling Pharmaceutical Innovation through Collaboration",
+        authors: "Yashiro, K., Lim, Y., Sengoku, S., Aoyama, A., & Kodama, K.",
+        journal: "Journal of Open Innovation: Technology, Market, and Complexity (Elsevier), Vol. 10, No. 1, 2024.",
+        isBook: false
+      },
+      {
+        tag: "Journal (2023)",
+        title: "Increasing orphan drug loss in Japan: Trends and R&D strategy for rare diseases",
+        authors: "Lim, Y., et al.",
+        journal: "Drug Discovery Today (Elsevier), Vol. 28, No. 10, 2023.",
+        isBook: false
+      },
+      {
+        tag: "Book Chapter (2022)",
+        title: "Digital Healthcare Development and mHealth in South Korea",
+        authors: "Lim, Y.",
+        journal: "Mobile Health (mHealth) - Rethinking Innovation Management to Harmonize AI and Social Design, Springer, 2022.",
+        isBook: true
+      }
+    ];
+
+    let currentLang = 'ja';
+
+    function setLang(lang) {
+      currentLang = lang;
+      const dict = DATA[lang];
+
+      // 버튼 활성화 토글
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.includes(lang === 'ko' ? '한국어' : lang === 'ja' ? '日本語' : 'English'));
+      });
+
+      // 텍스트 업데이트
+      document.getElementById('navBrand').textContent = dict.navBrand;
+      document.getElementById('navAbout').textContent = dict.navAbout;
+      document.getElementById('navResearch').textContent = dict.navResearch;
+      document.getElementById('navPublications').textContent = dict.navPublications;
+      document.getElementById('navActivities').textContent = dict.navActivities;
+      document.getElementById('navContact').textContent = dict.navContact;
+
+      document.getElementById('heroBadge').textContent = dict.heroBadge;
+      document.getElementById('heroName').textContent = dict.heroName;
+      document.getElementById('heroTitle').textContent = dict.heroTitle;
+      document.getElementById('heroDept').textContent = dict.heroDept;
+
+      document.getElementById('secAboutTitle').textContent = dict.secAboutTitle;
+      document.getElementById('bioDescription').textContent = dict.bioDescription;
+      document.getElementById('eduHeading').textContent = dict.eduHeading;
+      document.getElementById('expHeading').textContent = dict.expHeading;
+      document.getElementById('certHeading').textContent = dict.certHeading;
+      document.getElementById('secResearchTitle').textContent = dict.secResearchTitle;
+      document.getElementById('secPubTitle').textContent = dict.secPubTitle;
+      document.getElementById('secMediaTitle').textContent = dict.secMediaTitle;
+      document.getElementById('secContactTitle').textContent = dict.secContactTitle;
+
+      document.getElementById('contactAffilTitle').textContent = dict.contactAffilTitle;
+      document.getElementById('contactAffilDesc').innerHTML = dict.contactAffilDesc;
+      document.getElementById('contactDbTitle').textContent = dict.contactDbTitle;
+
+      // 1. 학력 (Education) 렌더링 (고정 카드)
+      const eduContainer = document.getElementById('educationList');
+      eduContainer.innerHTML = dict.education.map(item => `
+        <div class="edu-item">
+          <div class="edu-year">${item.period}</div>
+          <div class="edu-degree">${item.degree}</div>
+          <div class="edu-school">${item.school}</div>
+        </div>
+      `).join('');
+
+      // 2. 경력 (Experience) 렌더링 (최신순 세로 타임라인)
+      const expContainer = document.getElementById('experienceList');
+      expContainer.innerHTML = dict.experience.map(item => `
+        <div class="timeline-item">
+          <div class="timeline-dot ${item.current ? 'current' : ''}"></div>
+          <div class="timeline-year ${item.current ? 'current' : ''}">${item.period}</div>
+          <div class="timeline-role">${item.role}</div>
+          <div class="timeline-org">${item.org}</div>
+        </div>
+      `).join('');
+
+      // 3. 자격 및 활동 렌더링
+      const certContainer = document.getElementById('certList');
+      certContainer.innerHTML = dict.certifications.map(c => `
+        <li><i class="fas fa-check-circle" style="color: var(--primary); margin-right: 0.5rem;"></i>${c}</li>
+      `).join('');
+
+      // 4. 연구 분야 렌더링
+      const resContainer = document.getElementById('researchGrid');
+      resContainer.innerHTML = dict.research.map(r => `
+        <div class="research-card">
+          <div class="research-icon"><i class="fas ${r.icon}"></i></div>
+          <h4>${r.title}</h4>
+          <p>${r.desc}</p>
+        </div>
+      `).join('');
+
+      // 5. 미디어 및 대외활동 렌더링
+      const mediaContainer = document.getElementById('mediaGrid');
+      mediaContainer.innerHTML = dict.media.map(m => `
+        <a href="${m.url}" target="_blank" class="media-item">
+          <div class="media-icon"><i class="fas fa-external-link-alt"></i></div>
+          <div>
+            <div class="media-outlet">${m.outlet}</div>
+            <div class="media-headline">${m.title}</div>
+            <div class="media-desc">${m.desc}</div>
+          </div>
+        </a>
+      `).join('');
+    }
+
+    // 대표 논문 렌더링
+    function renderPublications() {
+      const pubContainer = document.getElementById('pubList');
+      pubContainer.innerHTML = PUBLICATIONS.map(p => `
+        <li class="pub-item">
+          <span class="pub-tag ${p.isBook ? 'book' : ''}">${p.tag}</span>
+          <div class="pub-title">${p.title}</div>
+          <div class="pub-authors">${p.authors} — <span class="pub-journal">${p.journal}</span></div>
+        </li>
+      `).join('');
+    }
+
+    // 초기 실행
+    window.addEventListener('DOMContentLoaded', () => {
+      setLang('ja'); // 기본 일본어 (상단 버튼으로 한국어/영어 즉시 전환 가능)
+      renderPublications();
+    });
+  </script>
 </body>
 </html>
